@@ -8,9 +8,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv("FLASK_KEY")
 
 
-@app.route("/")
-def hello_world():
-    return f"<h1>Behold, I am {random_name('superhero')}!</h1>"
+
 
 
 if __name__ == "__main__":
